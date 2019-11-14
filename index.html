@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flock Trips - Bachelor Party Ideas + Planning service</title>
+    <link rel="stylesheet" href="./style/swiper.min.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="flocktrips.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://flocktrips.com" />
+    <meta property="og:image" content="og.png" />
+    <meta property="og:description" content="The easiest way to plan a bachelor party. Flock helps you and your friends easily plan bachelor parties and group trips, and builds an itenarary in one easily-digestible place for the group."/>
+
+    <!-- Twitter Open Graph -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@flocktrips" />
+    <meta name="twitter:creator" content="@tonigemayel" />
+    <meta property="og:url" content="https://flocktrips.com" />
+    <meta property="og:title" content="Your bachelor party concierge" />
+    <meta property="og:description" content="The easiest way to plan a bachelor party. Flock helps you and your friends easily plan bachelor parties and group trips, and builds an itenarary in one easily-digestible place for the group" />
+    <meta property="og:image" content="og.png" />
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+
+      <a class="navbar-brand" href="#">
+        <img src="./image/logo-blue.png" width="72" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end">
+          <div class="py-2 py-lg-0">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">How it works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Destinations</a>
+              </li>
+            </ul>
+          </div>
+        <button type="button" class="btn btn-primary get-started">Get Started</button>
+
+        </div>
+    </nav>
+  </div>
+  </div>
+    <div class="container col-12 p-0">
+        <div class="header col-12">
+            <div class="row col-sm-12">
+                <div class="about col-6">
+                    <h1>Bachelor parties just got better</h1>
+                    <p> Skip the spreadsheets & browser tabs that come with planning the perfect bachelor party. We’re
+                        your one-stop shop for planning the perfect trip for you and your boys.</p>
+                </div>
+                <div class="form">
+                    <form name="trip" method="POST" data-netlify="true">
+                        <div class="swiper-container form-swiper-container">
+                            <div class="swiper-wrapper form-swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h2>Type of Trip</h2>
+                                    <div class="select">
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/Group 44.png" alt="">
+                                            </div>
+                                            <input type="radio" name="type" value="party" hidden id="">
+                                            Party
+                                        </div>
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/Screenshot 2019-07-28 at 18.11.png" alt="">
+                                            </div>
+                                            <input type="radio" name="type" value="golf" hidden id="">
+                                            Golf
+                                        </div>
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/Screenshot 2019-07-28 at 18.14.png" alt="">
+                                            </div>
+                                            <input type="radio" name="type" value="outdoors" hidden id="">
+                                            Outdoors
+                                        </div>
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/_.png" alt="">
+                                            </div>
+                                            <input type="radio" name="type" value="type-not" hidden id="">
+                                            I don't know
+                                        </div>
+                                    </div>
+                                    <button disabled type="button" class="type-button">Next</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h2>Number of Guests</h2>
+                                    <div class="select">
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/people1.png" alt="">
+                                            </div>
+                                            <input type="radio" name="numberGuests" value="2_6" hidden id="">
+                                            2-6
+                                        </div>
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/people2.png" alt="">
+                                            </div>
+                                            <input type="radio" name="numberGuests" value="6_12" hidden id="">
+                                            6-12
+                                        </div>
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/people3.png" alt="">
+                                            </div>
+                                            <input type="radio" name="numberGuests" value="12+" hidden id="">
+                                            12+
+                                        </div>
+                                        <div>
+                                            <div class="pic">
+                                                <img src="./image/_.png" alt="">
+                                            </div>
+                                            <input type="radio" name="numberGuests" value="Not of Guests" hidden id="">
+                                            I don't know
+                                        </div>
+                                    </div>
+                                    <button disabled type="button" class="num-button">Next</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h2>Trip Dates</h2>
+                                    <div class="selects">
+                                        <div class="date form-select datepicker">
+                                            <input id="datepicker" name="date" oninput="oninput()" placeholder="Start Date" />
+                                            <img class="select-icon" src="./image/arrow-bottom.png" alt="">
+                                        </div>
+                                        <div class=" days">
+                                            <img class="select-icon-left" src="./image/day.png" alt="">
+                                            <img class="select-icon" src="./image/arrow-bottom.png" alt="">
+                                            <select id="days" name="day" value="Number of days"
+                                                class="custom-select">
+                                            </select>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="date-not" name="date" value="I dont know">
+                                            <label for="date-not">I don’t know</label>
+                                        </div>
+                                    </div>
+                                    <button disabled type="button" class="selects-button">Next</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h2>Let’s Chat</h2>
+                                    <div class="select inps">
+                                        <div class="form-input">
+                                            <div>
+                                                <img class="form-icon" src="./image/name.png" alt="">
+                                            </div>
+                                            <input type="text" name="full-name" placeholder="Full name">
+                                        </div>
+                                        <div class="form-input">
+                                            <div>
+                                                <img class="form-icon" src="./image/email.png" alt="">
+                                            </div>
+                                            <input type="email" name="email" placeholder="Email">
+                                        </div>
+                                        <div class="form-input">
+                                            <div>
+                                                <img class="form-icon" src="./image/phone.png" alt="">
+                                            </div>
+                                            <input type="text" name="phone" placeholder="Phone">
+                                        </div>
+                                    </div>
+                                    <button disabled>Next</button>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination form-swiper-pagination"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <section>
+          <div class="content col-12">
+              <div class="row justify-content-center mb-4">
+                  <div class="col-sm-6 mb-4">
+                      <div class="number grey">🙌</div>
+                      <div class="name">Decisions get easier when we handle the details</div>
+                      <div class="more">Pool party of cabin in the wood? Apartment or luxury hotel? Share your thinking
+                          online - fast & easy.</div>
+                  </div>
+                  <div class="col-sm-6 mb-4">
+                      <div class="number grey">👌</div>
+                      <div class="name">Everything you want, without all the work.</div>
+                      <div class="more">Your Group Trip Pro will work with you on every last detail. All you have to do is show up. We’ll coordinate all the details and see to it that all the costs get split between guests just as you’d like. </div>
+                  </div>
+                  <div class="col-sm-6 mb-4">
+                      <div class="number grey">👉</div>
+                      <div class="name">All the details at your fingertip at any moment</div>
+                      <div class="more">You like what you see, and you and your friends pack your bags and hit the road.
+                      </div>
+                  </div>
+                  <div class="col-sm-6 mb-4">
+                      <div class="number grey">👍</div>
+                      <div class="name">Leave it to us to find the best spots</div>
+                      <div class="more">You like what you see, and you and your friends pack your bags and hit the road.
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <section class="img-divider">
+          <img src="./image/full-width-image.png">
+        </section>
+        <div class="content col-12">
+            <div class="row">
+                <h2>Planning has never been easier</h2>
+            </div>
+            <div class="row">
+                <div class="col-10 col-md-3 col-sm-8">
+                    <div class="number">1</div>
+                    <div class="name">You dream it</div>
+                    <div class="more">Pool party of cabin in the wood? Apartment or luxury hotel? Share your thinking
+                        online - fast & easy.</div>
+                </div>
+                <div class="col-10 col-md-3 col-sm-8">
+                    <div class="number">2</div>
+                    <div class="name">We plan it</div>
+                    <div class="more">Our group travel consultants will arrange and customize the perfect trip for you
+                        and your crew.</div>
+                </div>
+                <div class="col-10 col-md-3 col-sm-8">
+                    <div class="number">3</div>
+                    <div class="name">Let’s do it</div>
+                    <div class="more">You like what you see, and you and your friends pack your bags and hit the road.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="price col-12">
+            <h2>All this for just $35/guy</h2>
+            <p class="col-10">That’s right. For the price of a couple beers each, you can have your entire bachelor
+                party planned for
+                you. Get in touch with us today to learn more.</p>
+            <button onclick="getStarted()">Get started</button>
+        </div>
+        <div class="tips col-12">
+            <h2>Trip tips</h2>
+            <p class="col-10">
+                Written by our Group Trip Pros to give you a taste of what a few of our favortie cities have to offer.
+            </p>
+            <a class="col-10" href="#">See More</a>
+            <div class="row col">
+                <div>
+                    <div class="line"></div>
+                    <div class="name">Austin</div>
+                    <img src="./image/Group24.png" alt="">
+                </div>
+                <div>
+                    <div class="line"></div>
+                    <div class="name">Miami</div>
+                    <img src="./image/Group 23.png" alt="">
+                </div>
+                <div>
+                    <div class="line"></div>
+                    <div class="name">Nashville</div>
+                    <img src="./image/Group 22.png" alt="">
+                </div>
+                <div>
+                    <div class="line"></div>
+                    <div class="name">Scottsdale</div>
+                    <img src="./image/Group 21.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="swiper-container slider-swiper-container">
+                <div class="swiper-wrapper slider-swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="icon"><span>“</span></div>
+                        <h2>Damn. These guys planned an unreal trip. All we had to do was show up.</h2>
+                        <img class="photo" src="./image/Group 12.3.png" alt="">
+                        <span>Dan from San Francisco</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon"><span>“</span></div>
+                        <h2>Damn. These guys planned an unreal trip. All we had to do was show up.</h2>
+                        <img class="photo" src="./image/Group 12.3.png" alt="">
+                        <span>Dan from San Francisco</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon"><span>“</span></div>
+                        <h2>Damn. These guys planned an unreal trip. All we had to do was show up.</h2>
+                        <img class="photo" src="./image/Group 12.3.png" alt="">
+                        <span>Dan from San Francisco</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon"><span>“</span></div>
+                        <h2>Damn. These guys planned an unreal trip. All we had to do was show up.</h2>
+                        <img class="photo" src="./image/Group 12.3.png" alt="">
+                        <span>Dan from San Francisco</span>
+                    </div>
+                </div>
+                <img class="swiper-button-prev slider-swiper-button-prev" src="./image/left.png" alt="">
+                <img class="swiper-button-next slider-swiper-button-next" src="./image/right.png" alt="">
+                <div class="swiper-pagination slider-swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="question col-12">
+            <h2>Ready to learn more?</h2>
+            <p class="col-10">Chat with one of our Group Trip Pros today.</p>
+            <button onclick="getInTouch()">Get in touch</button>
+        </div>
+        <div class="footer col-12">
+            <div class="row">
+                <div class="col-md-10">
+                    <img src="./image/FLOCK.png" alt="">
+                    <span>Bachelor parties just got better</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 col-md-3 col-sm-12">
+                    <p><a href="#" class="footer-link">About Flock</a></p>
+                    <p><a href="#" class="footer-link">FAQs</a></p>
+                    <p><a href="#" class="footer-link">Contact</a></p>
+                </div>
+                <div class="col-10 col-md-3 col-sm-12">
+                    <p><a href="#" class="footer-link">Austin</a></p>
+                    <p><a href="/charleston-sc" class="footer-link">Charleston</a></p>
+                    <p><a href="#" class="footer-link">Nashville</a></p>
+                    <p><a href="#" class="footer-link">Miami</a></p>
+                    <p><a href="#" class="footer-link">Scottsdale</a></p>
+                    <p><a href="#" class="footer-link">New Orleans</a></p>
+                </div>
+                <div class="col-10 col-md-4 col-sm-12">
+                    <!-- <img src="./image/social-icons.png" alt="" class="social-icons"> -->
+                    <div class="social-icons">
+                        <a href="#"><img src="./image/social-icons/youtube.png" alt="" class="social-icon"></a>
+                        <a href="#"><img src="./image/social-icons/instagram.png" alt="" class="social-icon"></a>
+                        <a href="#"><img src="./image/social-icons/facebook.png" alt="" class="social-icon"></a>
+                        <a href="#"><img src="./image/social-icons/twitter.png" alt="" class="social-icon"></a>
+                        <a href="#"><img src="./image/social-icons/linkedin.png" alt="" class="social-icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script/swiper.min.js"></script>
+    <script src="./script/jquery-3.4.1.min.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
